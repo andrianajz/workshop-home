@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family:sans-serif;
+}
+
+
+h1, h2, h3 {
+	font-weight: 20;
+	text-transform: uppercase;
+}
+
+.hero h1 {
+	font-size:40px;
+}
+
+.hero {
+	color: white;
+	text-align: center;
+	background-image: url(../images/hero1.jpg);
+	background-size: cover;
+	padding-top: 200px;
+	padding-bottom:200px;
+}
+
+nav {
+background-color: black;
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 18px;
+}
+
+nav ul a {
+	color: white;
+	text-decoration: none;
+}
+
+
+.feature{
+	background-color: tomato;
+	display: flex;
+	padding: 40px;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.box {
+	flex-grow: 0;
+	flex-basis:33.33%;
+	padding: 40px;
+}
+
+.box {
+	text-align: center;
+	color: white;
+}
+
+.box img {
+	height:50px;
+	width: auto;
+}
+
+@media (max-width: 650px) {
+	.box {
+		flex-basis: 100px;
+	}
+}
+
+.media {
+	background-color: skyblue;
+	color: white;
+}
+
+.media-left {
+	flex-basis: 35%;
+}
+
+.media-right {
+	flex-basis: 55%;
+}
+
+.media-right img {
+	width: 100%;
+}
+
+.media {
+	padding: 40px;
+}
+
+@media (max-width: 800%) {
+	.media-left, .media-right{
+		flex-basis: 100%;
+	}
+}
+
+.review {
+	text-align: center;
+}
+
+.author {
+	width: 300px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.author img {
+	float: left;
+	border-radius: 50%;
+	width: 120px;
+	height: auto;
+	padding-right: 20px
+}
+
+.footer {
+	text-align: center;
+	padding: 50px;
+}
